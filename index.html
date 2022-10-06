@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // map methos//
+        var n1=[10,20,30,40,50]
+        var result=n1.map(function(a,index){
+            return a*2;
+        })
+        console.log(result);
+
+        //filter methods//
+        var n2=[10,20,30,40,50]
+        var b=n2.filter(function(b1,index){
+            return b1>=30;
+        })
+        console.log(b);
+
+        // find method//
+        var n3=[20,45,35,78, 35,22]
+        var b2=n3.find(function(a,index){
+            return a===35;
+        })
+console.log(b2);
+
+//every method//
+
+var n4=[20,45,35,78, 35,22]
+var b3=n4.every(function(a,index){
+    return a>0;
+})
+console.log(b3);
+
+//some method//
+var n5=[20,45,35,78, 35,22]
+var b4=n5.some(function(a,index){
+return a===35;
+})
+
+console.log(b4);
+
+//reduce method//
+var n6=[20,45,35,78, 35,22]
+ var b5=n6.reduce(function(a,c){
+    return a+c;
+ })
+console.log(b5);
+
+
+    </script>
+</body>
+</html>
